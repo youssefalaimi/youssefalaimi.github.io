@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Alaimi - Digital Portfolio</title>
+    <link rel="icon" type="image/png" href="./Logo_EPI_Sousse.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="home">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#soft-skills">SKILLS</a></li>
+                    <li><a href="#contact" class="nav-btn-contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="left-content">
+                <h1 class="main-title">YOUSSEF ALAIMI</h1>
+
+                <div class="action-buttons">
+                    <a href="#" id="openContactBtn" class="btn btn-filled open-modal-btn">Let's Talk</a>
+                </div>
+
+                <div class="info-section" id="about">
+                    <div class="tagline">
+                        <h2>ABOUT ME</h2>
+                    </div>
+                    <div class="description">
+                        <p>Youssef Alaimi is a first-year Information Technology student at EPI Sousse, specializing in
+                            Software Engineering. Originally from Ksar Hellal, he is deeply fascinated and strongly
+                            drawn to the world of software development, demonstrating a growing passion for building,
+                            learning, and innovating through technology. He is highly motivated to continuously develop
+                            his technical skills and expand his knowledge in modern software engineering practices.</p>
+                    </div>
+                </div>
+
+
+                <div class="services-row" style="margin-top: 40px; border-top: none;">
+                    <div class="service-box">
+                        <span class="num">01</span>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical thinking to simple complex issues</p>
+                    </div>
+                    <div class="service-box">
+                        <span class="num">02</span>
+                        <h3>Teamwork</h3>
+                        <p>Collaborative approach to achieve common goals</p>
+                    </div>
+                    <div class="service-box">
+                        <span class="num">03</span>
+                        <h3>Adaptability</h3>
+                        <p>Quick to learn and adjust to new technologies</p>
+                    </div>
+                </div>
+
+                <div class="skills-section" id="skills">
+                    <div class="tagline">
+                        <h2>TECHNICAL<br>PROFICIENCY</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" style="--i:1">
+                            <div class="skill-icon html-icon">&lt;/&gt;</div>
+                            <h3>HTML5</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--i:2">
+                            <div class="skill-icon css-icon">#</div>
+                            <h3>CSS3</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--i:3">
+                            <div class="skill-icon js-icon">{ }</div>
+                            <h3>JavaScript</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta-section">
+                    <h2>Ready To Turn Ideas Into Reality?</h2>
+                    <p>I'm currently available for freelance projects and open to new opportunities.</p>
+                    <a href="#" class="btn btn-filled open-modal-btn">Contact Me</a>
+                </div>
+
+                <footer>
+                    <div class="footer-content">
+                        <p>&copy; 2024 Youssef Alaimi. Built with passion & code.</p>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="right-content">
+                <div class="image-wrapper">
+                    <img src="./youssef-removebg-preview.png" alt="Profile of Youssef Alaimi">
+                    <div class="social-sidebar">
+                        <a href="https://github.com/oufatn-tech">Github</a>
+                        <a href="https://www.facebook.com/share/184EvKfd3A/?mibextid=wwXIfr">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Let's Collaborate</h2>
+            <form action="mailto:oufa.tn@gmail.com" method="post" enctype="text/plain">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" placeholder="Tell me about your project" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-filled full-width">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
