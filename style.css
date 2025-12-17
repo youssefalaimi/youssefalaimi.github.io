@@ -435,6 +435,7 @@ footer p {
         right: 0;
         width: 100%;
         height: 500px;
+        margin-bottom: 20px;
     }
 
     .info-section {
@@ -443,11 +444,117 @@ footer p {
     }
 
     main {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        /* Move image to top on smaller screens */
+        margin-top: 20px;
     }
 
     .left-content {
         padding-right: 0;
+        overflow-y: visible;
+        /* Disable internal scroll on mobile, let page scroll */
+    }
+
+    .container {
+        padding: 10px 20px;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    body {
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .social-sidebar {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 6px 16px;
+        font-size: 0.8rem;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+        white-space: normal;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .action-buttons {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .text-center-mobile {
+        text-align: center;
+    }
+
+    .image-wrapper {
+        height: 350px;
+    }
+
+    .services-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .description p {
+        max-width: 100%;
+    }
+
+    /* Adjust modal for mobile */
+    .modal-content {
+        margin: 20% auto;
+        width: 95%;
+        padding: 25px;
+    }
+
+    /* Fix Contact CTA on mobile */
+    .contact-cta-section {
+        padding: 30px 20px;
+    }
+
+    .contact-cta-section h2 {
+        font-size: 1.5rem;
+        /* Smaller font for mobile */
+    }
+
+    .contact-cta-section .btn {
+        width: 100%;
+        /* Full width button on mobile to prevent squishing */
+        display: block;
+        box-sizing: border-box;
+        white-space: nowrap;
     }
 }
 
