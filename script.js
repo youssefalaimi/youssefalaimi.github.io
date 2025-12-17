@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // If we are at the very top, set active to home
             if (scrollContainer.scrollTop < 100) {
-                current = "home";
+                current = "intro";
             }
 
             navLi.forEach((a) => {
